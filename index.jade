@@ -1,0 +1,129 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    meta(name="description",content="")
+    meta(name="author",content="")
+    link(rel="icon",href="../../favicon.ico")
+    title= Rotaract
+    block styles
+      link(rel="stylesheet",href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css")
+      link(rel="stylesheet",href="css/stylesheet.css")
+      link(href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet")
+      link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+
+
+  body(data-spy="scroll",data-target=".scrollspy")
+    block body
+
+      .nav-overlay
+        ul#fadein
+          li: a(href="#home") Acasa
+          li: a(href="#about")  Despre
+          li: a(href="#skills") Cu ce ne ocupam
+          li: a(href="#team") Echipa
+          li: a(href="#project") Ai un proiect?
+          li: a(href="#hiring") Angajam!
+        .nav-btn
+          .span
+          .span
+          .span
+
+
+
+
+
+
+      .header
+        .container-fluid.text-center
+          .logo
+            img(src="/images/logo.png")
+
+
+      .about
+        .container
+          .card
+            h3 A LITTLE ABOUT US...
+            h1 Cine Suntem?
+            hr
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          .image#parallaxed
+
+      .focus
+        .container.text-center
+          h1 Ne ocupam cu
+          .col-sm-4
+            .fa.fa-phone
+            h1 Hey
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          .col-sm-4
+            .fa.fa-phone
+            h1 Hey
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          .col-sm-4
+            .fa.fa-phone
+            h1 Hey
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+
+      .team
+        .image
+          img(src="images/person.jpg")
+          h3 John Doe
+        .image
+          img(src="images/person.jpg")
+          h3 John Doe
+        .image
+          img(src="images/person.jpg")
+          h3 John Doe
+        .image
+          img(src="images/person.jpg")
+          h3 John Doe
+        .image
+          img(src="images/person.jpg")
+          h3 John Doe
+
+
+      .hiring.text-center
+        button.btn-primary.btn-lg Angajam!
+
+      .project
+        h3.text-center Ai un proiect?
+        form
+          label(for="Name")
+          input(type="text" class="feedback-input form-control" placeholder="Name" name="Name" id="Name")
+
+          label(for="Tel")
+          input(type="text" class="feedback-input form-control" placeholder="Phone Number" name="Tel" id="Tel")
+
+          label(for="Email")
+          input(type="text" class="feedback-input form-control" placeholder="E-mail" name="Email" id="Email")
+
+          label(for="Message")
+          textarea(type="text" class="feedback-input form-control" placeholder="Message..." rows="5" cols="20" id="Message")
+          br
+          input(type="submit" name="submit" value="Submit" class="submit-button form-control")
+
+
+      .footer
+        .container
+          .col-md-4
+            .logo
+             img(src="images/genesis.png")
+          .col-md-4
+            h3 About
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          .col-md-4
+            .fa.fa-facebook-official.fa-3x
+
+          
+
+      a(href="#0" class="cd-top") Top
+    block scripts
+      script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+      script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
+      script(src="javascript/style.js")
+      script(src="javascript/backtotop.js")
+
+

@@ -1,0 +1,297 @@
+@import "normalize.scss"
+
+//Basic
+
+html,body
+	position: relative
+	max-width: 100%
+	overflow-x: hidden
+
+.container 
+	padding: 0px
+
+
+
+
+// Font
+$font1: 'Rozha One'
+
+// Screen-sizes
+$mobile: 360px
+$tablet: 768px
+$medium-desktop: 1024px
+$desktop: 1280px
+ 
+// Colors
+$primary-color: #0075a6
+
+// Fonts
+$font: 'Libre Baskerville'
+
+
+.header
+	position: relative
+	z-index: -2
+	height: 100vh
+	background:
+		image: url(../images/header-1.jpg)
+		size: cover
+		position: center
+
+
+	.logo 
+		img
+			margin-top: 110px
+			height: 70px
+			width: 300px
+
+
+
+
+.about
+	margin-top: 30px
+	position: relative
+	position: relative
+	height: 400px
+	margin-left: 10vw 
+	h1
+		text-align: right
+		margin-top: 0px
+		letter-spacing: 5px
+		margin-left: 30px
+		font-family: $font1
+
+
+
+	.card 
+		h3 
+			text-align: right
+			font-size: 1.2rem
+			font-family: serif
+			margin: 0px
+			color: rgba($primary-color, 0.7)
+		height: 250px
+		box-shadow: 1px 2px 5px rgba(black, 0.1)
+		width: 500px
+		padding: 10px
+		background-color: rgba(white, 1)
+		p 
+			font-size: 1.2rem
+			font-weight: 600
+
+	.image
+		z-index: -1
+		top: 0
+		left: 430px
+		right: 0
+		bottom: 0
+		position: absolute
+		height: 400px
+		width: 600px
+		background:
+			size: cover
+			image: url(../images/about.jpg)
+
+
+//	Focus - 3 things
+.focus
+	font-family: serif
+	h1 
+		margin-bottom: 30px
+	margin-top: 10px
+	.fa 
+		font-size: 4rem
+		margin-top: 30px
+	color: white
+	background-color: #0075a6
+	.col-sm-4
+		border-right: 2px solid white
+
+	.col-sm-4:nth-child(4) 
+		border: none
+	p 
+		margin-bottom: 30px
+
+// Nav
+.nav-overlay
+	display: none
+	z-index: 3
+	position: fixed
+	height: 100%
+	background: linear-gradient(to bottom, rgba($primary-color, 0.5), rgba($primary-color, 0))
+	width: 170px
+	border-radius: 5px
+	right: 0
+	top: 0
+	padding-top: 90px
+	margin-right: -170px
+	ul
+		line-height: 40px
+		text-align: right 
+		list-style: none
+		margin: 0
+		padding: 0 
+
+		li
+
+			transition: 0.2s all ease-in-out
+			&:hover 
+				background-color: rgba(blue, 0.2)
+		
+
+			a
+				font-family: $font1
+				margin-right: 10px 
+				transition: 0.2s all ease-in-out
+				text-decoration: none
+				color: black
+				font-size: 2rem
+
+				&:hover
+					color: rgba(white, 0.8)
+					
+
+.nav-btn
+	position: fixed
+	display: inline-block
+	vertical-align: middle
+	width: 30px
+	height: 15px
+	right: 60px
+	top: 60px
+	cursor: pointer
+
+	&:hover
+		.span:nth-child(2)
+			width: 100%
+			margin-left: 0px
+
+		.span:nth-child(3)
+			width: 100%
+			margin-left: 0px
+
+	.span 
+		transition: 0.5s all ease-in-out 
+		height: 1px 
+		background: #111
+		margin-bottom: 5px 
+		display: block
+
+		&:nth-child(2)
+			width: 75%
+			margin-left: 7px
+
+		&:nth-child(3)
+			width: 50%
+			margin-left: 14px
+
+
+
+.team 
+	margin: 100px 50px 50px 50px
+	display: flex
+	justify-content: space-around
+	flex-wrap: wrap
+	.image
+		position: relative
+		img 
+			box-shadow: 15px 15px 1px $primary-color
+			margin-bottom: 40px
+			height: 300px
+			width: 400px
+
+		h3 
+			font-size: 2.6rem
+			color: white
+			letter-spacing: 2px
+			font-family: $font1
+			position: absolute
+			top: 50%
+			left: 0
+			right: 70%
+			margin-left: -50px
+			padding: 5px
+			background-color: rgba($primary-color, 0.6)
+
+.hiring
+	height: 300px
+	background:
+		image: url(../images/hiring.jpeg)
+		size: cover
+		attachment: fixed
+	button
+		transition: 0.3s all ease-in-out
+		margin-top: 120px
+		background-color: rgba(black, 0.8)
+		border: none
+		border-radius: 0
+
+		&:hover
+			transform: translateY(-3px)
+
+
+.project
+	height: 400px
+	margin: 0px 30vw 
+
+.footer 
+	display: flex
+	justify-content: space-around
+	margin-top: 100px
+	background:
+		color: rgba(black, 0.8)
+
+	img 
+		height: 100px
+	color: white
+	.fa 
+		color: white
+
+
+
+
+.cd-top 
+  display: inline-block
+  height: 40px
+  width: 40px
+  position: fixed
+  bottom: 40px
+  right: 10px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05)
+  /* image replacement properties */
+  overflow: hidden
+  text-indent: 100%
+  white-space: nowrap
+  background: $primary-color url(http://codyhouse.co/demo/back-to-top/img/cd-top-arrow.svg) no-repeat center 50%
+  visibility: hidden
+  opacity: 0
+  -webkit-transition: all 0.3s
+  -moz-transition: all 0.3s
+  transition: all 0.3s
+
+.cd-top.cd-is-visible 
+  /* the button becomes visible */
+  visibility: visible
+  opacity: 1
+
+.cd-top.cd-fade-out 
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5
+
+.no-touch .cd-top:hover 
+  background-color: #e86256
+  opacity: 1
+
+@media only screen and (min-width: 768px) 
+  .cd-top 
+    right: 20px
+    bottom: 20px
+  
+
+@media only screen and (min-width: 1024px) 
+  .cd-top 
+    height: 60px
+    width: 60px
+    right: 30px
+    bottom: 30px
+  
